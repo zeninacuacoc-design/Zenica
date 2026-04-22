@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>House of Fries</title>
+</head>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+<body style="margin:0; font-family: Arial, sans-serif; scroll-behavior:smooth;">
+
+<!-- NAVBAR (FIXED) -->
+<div style="
+  position:fixed;
+  top:0;
+  width:100%;
+  background:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  box-sizing:border-box;
+  z-index:1000;
+  flex-wrap:wrap;
+">
+  <div><b>House of Fries Tagoloan Branch</b></div>
+
+  <div style="display:flex; align-items:center; flex-wrap:wrap;">
+    <a href="#home" style="margin:5px 10px; text-decoration:none; color:black;">Home</a>
+    <a href="#menu" style="margin:5px 10px; text-decoration:none; color:black;">Menu</a>
+    <a href="#about" style="margin:5px 10px; text-decoration:none; color:black;">About</a>
+    <a href="#location" style="margin:5px 10px; text-decoration:none; color:black;">Location</a>
+
+    <a href="#order" style="
+      margin:5px 10px;
+      background:red;
+      color:white;
+      padding:8px 15px;
+      border-radius:20px;
+      text-decoration:none;
+
+    ">
+      Order Now
+    </a>
+  </div>
+</div>
+
+<!-- HOME -->
+<div id="home" style="height:100vh; margin-top:70px; background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541592106381-b31e9677c0e5') center/cover no-repeat; display:flex; justify-content:center; align-items:center; text-align:center; color:white;">
+  <div>
+    <h1 style="font-size:50px; margin:0;">
+      Big, Crispy Fries <br>
+      <span style="color:orange;">You Can't Resist</span>
+    </h1>
+  </div>
+</div>
+
+<!-- MENU -->
+<div id="menu" style="padding:50px; background:#f9f9f9;">
+  <h2 style="text-align:center;">Our Menu</h2>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden;">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-07 220834.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Mango Shake</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱79</b></p>
+      </div>
+      <button onclick="addToCart('Mango Shake',79)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden;">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 225823.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Regular Hot Chili Fries</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱79</b></p>
+      </div>
+      <button onclick="addToCart('Regular Hot Chili Fries',79)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden;">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 225810.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Ultimate Hot Chili Fries</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱79</b></p>
+      </div>
+      <button onclick="addToCart('Ultimate Hot Chili Fries',79)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden;">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 230415.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Nachos and Fries</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱110</b></p>
+      </div>
+      <button onclick="addToCart('Nachos and Fries',110)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden; ">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 230434.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Footlong</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱99</b></p>
+      </div>
+      <button onclick="addToCart('Footlong',99)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden;">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-07 220705.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Salad</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱99</b></p>
+      </div>
+      <button onclick="addToCart('Salad',99)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden;">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-07 220808.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Fried Chicken</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱78</b></p>
+      </div>
+      <button onclick="addToCart('Fried Chicken',78)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+
+  <div style="display:flex; background:white; margin-top:20px; border-radius:10px; overflow:hidden;">
+    <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-07 220744.png" style="width:200px;">
+    <div style="flex:1; display:flex; justify-content:space-between; align-items:center; padding:20px;">
+      <div>
+        <h3 style="margin:0;">Calamares</h3>
+        <p style="margin:5px 0; color:orange;"><b>₱75</b></p>
+      </div>
+      <button onclick="addToCart('Calamares',75)" style="background:red; color:white; border:none; padding:10px 15px; border-radius:20px;">Add Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" style="background:#f5f5f5; padding-top:80px;">
+  <div style="text-align:center; padding:60px 20px; background:linear-gradient(to right, #f3e7d9, #e3eeff);">
+    <h1 style="font-size:40px; margin:0;">Our <span style="color:orange;">Story</span></h1>
+    <p style="margin-top:10px; color:#555;">
+      From a simple passion for great fries to Tagoloan's favorite spot for flavorful meals
+    </p>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; padding:50px; align-items:center; gap:30px;">
+    <div style="flex:1; text-align:center;">
+      <img src="C:\Users\might\OneDrive\Pictures\Screenshots\Screenshot 2026-04-07 222024.png" style="width:300px; border-radius:15px;">
+    </div>
+
+    <div style="flex:1;">
+      <h2>Where It All <span style="color:orange;">Began</span></h2>
+      <p style="color:#555;">
+        House of Fries started with a simple belief: everyone deserves delicious, satisfying food without breaking the bank. In the heart of Tagoloan, we opened our doors with a mission to serve the biggest, crispiest, most flavorful fries in town.
+      </p>
+      <p style="color:#555;">
+        What began as a small operation focused on perfecting the art of the perfect fry has grown into a beloved local spot known for generous portions, bold flavors, and affordable prices that keep our community coming back day after day.
+      </p>
+      <p style="color:#555;">
+        Today, we're proud to serve not just fries, but a full menu of crowd-pleasing meals.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- LOCATION -->
+<div id="location" style="background:#f5f5f5; padding:80px 50px;">
+  <div style="text-align:center; margin-bottom:40px;">
+    <h1 style="font-size:40px; color:#e67e22;">Visit Us</h1>
+    <p style="color:#555;">Come experience our delicious fries and meals in person</p>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start;">
+    <div style="flex:1;">
+      <h2>Get In Touch</h2>
+      <p><b>📍 Address</b><br>
+      Villegas Building, Door 05, JP Street<br>
+      Poblacion, Tagoloan, Misamis Oriental<br>
+      Philippines</p>
+      <p><b>📞 Phone</b><br>(123) 456-7890</p>
+      <p><b>🕒 Hours</b><br>Monday - Sunday<br>10:00 AM - 9:00 PM</p>
+      <a href="https://maps.google.com" target="_blank"
+      style="display:inline-block; margin-top:10px; background:#ff6600; color:white; padding:10px 20px; border-radius:25px; text-decoration:none;">
+      Get Directions
+      </a>
+    </div>
+
+    <div style="flex:1;">
+      <iframe 
+      src="https://maps.google.com/maps?q=Tagoloan%20Misamis%20Oriental&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      width="100%" height="350" style="border:0; border-radius:10px;">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER -->
+<div id="order" style="padding:30px; background:#f0e68c;">
+  <h2>Place Order</h2>
+
+  <ul id="cart-items"></ul>
+
+  <p>Subtotal: <span id="subtotal">₱0</span></p>
+  <p>Delivery Fee: ₱49</p>
+  <p>Total: <span id="total">₱0</span></p>
+
+  <input id="delivery-address" placeholder="Your address" style="width:100%; padding:10px;">
+  <br><br>
+
+  <button onclick="placeOrder()" style="padding:10px 15px;">Place Order</button>
+
+  <button onclick="clearCart()" style="margin-left:10px; background:black; color:white; padding:10px 15px; border:none; border-radius:10px;">
+    Clear Cart
+  </button>
+</div>
+
+<script>
+let cart = {};
+const deliveryFee = 49;
+
+function addToCart(name, price) {
+  if (cart[name]) {
+    cart[name].qty++;
+  } else {
+    cart[name] = { price: price, qty: 1 };
+  }
+
+  renderCart();
+
+  document.getElementById("order").scrollIntoView({ behavior: "smooth" });
+}
+
+function removeItem(name) {
+  if (cart[name]) {
+    cart[name].qty--;
+
+    if (cart[name].qty <= 0) {
+      delete cart[name];
+    }
+  }
+
+  renderCart();
+}
+
+function clearCart() {
+  cart = {};
+  renderCart();
+}
+
+function renderCart() {
+  const cartList = document.getElementById("cart-items");
+  const subtotalEl = document.getElementById("subtotal");
+  const totalEl = document.getElementById("total");
+
+  cartList.innerHTML = "";
+  let subtotal = 0;
+
+  for (let item in cart) {
+    let data = cart[item];
+    let itemTotal = data.price * data.qty;
+    subtotal += itemTotal;
+
+    const li = document.createElement("li");
+    li.innerHTML = `
+      ${data.qty}x ${item} - ₱${itemTotal}
+      <button onclick="removeItem('${item}')" 
+        style="margin-left:10px; background:red; color:white; border:none; border-radius:5px; padding:3px 8px;">
+        Remove
+      </button>
+    `;
+    cartList.appendChild(li);
+  }
+
+  subtotalEl.textContent = "₱" + subtotal;
+  totalEl.textContent = "₱" + (subtotal + deliveryFee);
+}
+
+function placeOrder() {
+  const address = document.getElementById("delivery-address").value;
+
+  if (Object.keys(cart).length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+
+  alert(`Order placed! Deliver to: ${address}`);
+  cart = {};
+  renderCart();
+}
+</script>
+
+
+</body>
+</html>
